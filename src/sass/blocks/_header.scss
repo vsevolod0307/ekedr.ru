@@ -1,0 +1,55 @@
+.header {
+    &-top {
+        background-color: $black;
+        &_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 34px;
+        }
+    }
+    &-bottom {
+        &_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 64px;
+        }
+    }
+    &_links {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    &_link a, &_contact a {
+        font-weight: 500;
+        font-size: 14px;
+        color: $colorGrey;
+        text-decoration: none;
+    }
+    &_contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 24px;
+        list-style-type: none;
+    }
+    &_menu, &_actions {
+        display: flex;
+        list-style-type: none;
+    }
+    &_menu-link {
+        margin-left: 40px;
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    &_basket {
+        margin-left: 24px;
+    }
+    &_call-phone img, &_basket img, &_menu-link img {
+        display: block;
+        margin: 0 auto;
+    }
+}

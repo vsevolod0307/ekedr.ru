@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    max-width: 1440px;
+    padding: 0 60px;
+    margin: 0 auto;
+}
+
+@import "./variables/variables";
+@import "./blocks/header";
