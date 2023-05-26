@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.mr-2 {
+    margin-right: 8px;
 }
 .container {
     max-width: 1440px;
@@ -11,3 +18,6 @@
 
 @import "./variables/variables";
 @import "./blocks/header";
+@import "./blocks/main";
+@import "./blocks/similar";
+@import "./blocks/footer";

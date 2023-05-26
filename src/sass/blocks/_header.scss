@@ -1,6 +1,6 @@
 .header {
     &-top {
-        background-color: $black;
+        background-color: $mainBlack;
         &_container {
             display: flex;
             justify-content: space-between;
@@ -9,6 +9,8 @@
         }
     }
     &-bottom {
+        box-shadow: 0 4px 7px 0 $colorLightGrey;
+        background-color: $white;
         &_container {
             display: flex;
             justify-content: space-between;
@@ -22,11 +24,18 @@
         justify-content: space-between;
         gap: 24px;
     }
-    &_link a, &_contact a {
+    &_link a, &_contact a, &_menu-link a {
+        font-size: 14px;
+        color: $colorLightGrey;
+        font-weight: 500;
+    }
+    &_menu-link a {
+        color: $colorDarkGrey;
+    }
+    &_call-phone, &_basket {
         font-weight: 500;
         font-size: 14px;
-        color: $colorGrey;
-        text-decoration: none;
+        color: $colorDarkGrey;
     }
     &_contacts {
         display: flex;
@@ -38,6 +47,7 @@
     &_menu, &_actions {
         display: flex;
         list-style-type: none;
+        align-items: flex-end;
     }
     &_menu-link {
         margin-left: 40px;

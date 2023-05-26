@@ -1,0 +1,37 @@
+.similar {
+  padding: 80px 0 140px 0;
+  &-title {
+    color: #3E3E3E;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  &-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+  &-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 290px;
+  }
+  &-img {
+    min-height: 192px;
+    max-width: 288px;
+    background: url(../images/similar.svg) center center / contain no-repeat;
+    border-radius: 8px;
+    border: 1px solid $colorLightGrey;
+  }
+  &-price {
+    font-weight: 600;
+    font-size: 20px;
+    color: $mainBlack;
+    margin-top: 16px;
+  }
+  &-descr {
+    font-weight: 500;
+    font-size: 16px;
+    color: $mainBlack;
+    margin-top: 8px;
+  }
+}
