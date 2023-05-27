@@ -51,15 +51,16 @@
     margin-top: 20px;
   }
   &-wrapper {
-    display: flex;
+    display: grid;
     margin-top: 24px;
     gap: 27px;
+    grid-template-columns: minmax(400px, 600px) 1fr;
   }
   &-images {
     &-bg {
       background: url(../images/img-item.svg) center center / cover no-repeat;
-      min-height: 506px;
-      min-width: 756px;
+      min-height: 30vw;
+      max-width: 756px;
       border-radius: 6px;
     }
     &-items {
