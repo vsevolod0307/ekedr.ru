@@ -29,9 +29,9 @@
     }
   }
   &-map {
-    display: grid;
-    grid-template-columns: minmax(300px, 500px) 1fr;
+    display: flex;
     margin-top: 28px;
+    justify-content: space-between;
   }
   &-info {
     display: flex;

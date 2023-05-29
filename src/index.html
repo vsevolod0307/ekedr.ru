@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
     <title>ekedr.ru</title>
 </head>
 <body>
@@ -32,7 +33,7 @@
                             <a href="mailto:info@kedr.ru">info@kedr.ru</a>
                         </li>
                         <li class="header_contact">
-                            <a href="tel:+78043337463">8 (804) 333-74-63</a>
+                            <a href="tel:+78043337463">+7 (804) 333-74-63</a>
                         </li>
                     </ul>
                 </div>
@@ -42,6 +43,26 @@
             <div class="container">
                 <div class="header-bottom_container">
                     <div class="header_logo">
+                        <div class="header-hamburger">
+                            <img src="images/menu.svg" alt="menu">
+                        </div>
+                        <div class="header-mobile">
+                            <ul class="header-mobile-menu">
+                                <li class="header-mobile-link">
+                                    <a href="#">О нас</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="#">Блог</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="#">Портфолио</a>
+                                </li>
+                                <li class="header-mobile-link">
+                                    <a href="#contacts">Контакты</a>
+                                </li>
+                            </ul>
+                            <div class="header-mobile-close">&times;</div>
+                        </div>
                         <a href="#">
                             <img src="images/logo.svg" alt="logo">
                         </a>
@@ -70,12 +91,14 @@
                     </ul>
                     <div class="header_actions">
                         <div class="header_call-phone">
-                            <img src="images/header_phone.svg" alt="phone">
-                            <span>Заказать звонок</span>
+                            <a href="tel:+78043337463">
+                                <img src="images/header_phone.svg" alt="phone">
+                            </a>
+                            <span class="mobile-none">Заказать звонок</span>
                         </div>
                         <div class="header_basket">
                             <img src="images/basket.svg" alt="basket">
-                            <span>Корзина</span>
+                            <span class="mobile-none">Корзина</span>
                         </div>
                     </div>
                 </div>
@@ -90,20 +113,22 @@
                 <a href="#" class="breadcrumbs-item active"><span class="breadcrumbs-bracket">></span> Хлебные крошки</a>
             </div>
             <h1 class="main-title">Баня-бочка из кедра круглая, длина 3,5 м , диаметр 2,1 м, толщина стенки 45 мм</h1>
-            <ul class="tags">
-                <li class="tags-item green">
-                    <img src="images/mark.svg" alt="mark">
-                    <a href="#">Идеально для небольших участков</a>
-                </li>
-                <li class="tags-item yellow">
-                    <img src="images/mark.svg" alt="mark">
-                    <a href="#">Быстрая топка</a>
-                </li>
-                <li class="tags-item blue">
-                    <img src="images/mark.svg" alt="mark">
-                    <a href="#">Выгодная цена</a>
-                </li>
-            </ul>
+            <div class="tags-inner">
+                <ul class="tags">
+                    <li class="tags-item green">
+                        <img src="images/mark.svg" alt="mark">
+                        <a href="#">Идеально для небольших участков</a>
+                    </li>
+                    <li class="tags-item yellow">
+                        <img src="images/mark.svg" alt="mark">
+                        <a href="#">Быстрая топка</a>
+                    </li>
+                    <li class="tags-item blue">
+                        <img src="images/mark.svg" alt="mark">
+                        <a href="#">Выгодная цена</a>
+                    </li>
+                </ul>
+            </div>
             <div class="main-wrapper">
                 <div class="main-images">
                     <div class="main-images-bg"></div>
@@ -118,6 +143,22 @@
                         <div class="main-images-item"></div>
                         <div class="main-images-item"></div>
                         <div class="main-images-item"></div>
+                    </div>
+                    <div class="itc-slider" data-slider="itc-slider" data-autoplay="true" swipe="true">
+                        <div class="itc-slider-wrapper">
+                            <div class="itc-slider-items">
+                                <div class="itc-slider-item"></div>
+                                <div class="itc-slider-item"></div>
+                                <div class="itc-slider-item"></div>
+                                <div class="itc-slider-item"></div>
+                            </div>
+                        </div>
+                        <ol class="itc-slider-indicators">
+                            <li class="itc-slider-indicator" data-slide-to="0"></li>
+                            <li class="itc-slider-indicator" data-slide-to="1"></li>
+                            <li class="itc-slider-indicator" data-slide-to="2"></li>
+                            <li class="itc-slider-indicator" data-slide-to="2"></li>
+                        </ol>
                     </div>
                 </div>
                 <div class="main-infobox">
@@ -174,10 +215,10 @@
                             <span class="main-price-current">317 990 ₽</span>
                         </div>
                         <div class="main-actions">
-                            <div class="main-fast-order">
+                            <a href="#form" class="main-fast-order">
                                 <span>Быстрый заказ</span>
                                 <img src="images/fast.svg" alt="fast">
-                            </div>
+                            </a>
                             <div class="main-add-basket">
                                 <span>В корзину</span>
                                 <svg width="21" height="20" viewBox="0 0 21 20" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
@@ -243,7 +284,7 @@
                             <span class="main-payment-value">К продукции изготовленной из 100% древесины, предъявляются требования по соблюдению температурного и влажностного режимов, не соблюдение которых ведет к порче товара , в связи с чем проданный товар возврату и обмену не подлежит</span>
                         </div>
                     </div>
-                    <div class="main-form">
+                    <div class="main-form" id="form">
                         <form class="main-form-wrap">
                             <div class="main-form-title">Хочу себе такую!</div>
                             <div class="main-form-subtitle">Заполните форму чтобы заказать в 1 клик</div>
@@ -294,7 +335,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contacts">
         <div class="container">
             <div class="footer-top">
                 <div class="header_logo">
@@ -303,7 +344,7 @@
                     </a>
                 </div>
                 <div class="footer-socials">
-                    <span>Связаться с нами</span>
+                    <span class="mobile-none">Связаться с нами</span>
                     <div class="footer-socials-item">
                         <img src="images/whatsapp.svg" alt="whatsapp">
                     </div>
@@ -315,7 +356,7 @@
             <div class="footer-bottom">
                 <div class="footer-map">
                     <div class="footer-info">
-                        <a href="tel:+78043337463">8 (804) 333-74-63</a>
+                        <a href="tel:+78043337463">+7 (804) 333-74-63</a>
                         <span class="footer-shedule">График работы: пн-пт с 9:00 до 18:00</span>
                         <span class="footer-address">Россия, г. Новосибирск. ул. Даргомыжского 8а, офис 20</span>
                         <span>Пишите нам: <a href="mailto:info@kedr.ru">info@kedr.ru</a></span>
@@ -366,6 +407,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/itc-slider.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

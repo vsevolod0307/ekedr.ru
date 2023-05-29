@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: "Noto Sans", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
 a {
     text-decoration: none;
 }
@@ -19,5 +22,6 @@ a {
 @import "./variables/variables";
 @import "./blocks/header";
 @import "./blocks/main";
+@import "./media/main";
 @import "./blocks/similar";
 @import "./blocks/footer";
