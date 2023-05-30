@@ -21,7 +21,13 @@ a {
 
 @import "./variables/variables";
 @import "./blocks/header";
-@import "./blocks/main";
-@import "./media/main";
-@import "./blocks/similar";
 @import "./blocks/footer";
+// карточка товара
+@import "./blocks/productDetail/main";
+@import "./blocks/productDetail/similar";
+@import "./media/product-detail";
+// главная
+@import "./blocks/main/top-slider";
+@import "./blocks/main/catalog";
+@import "./blocks/main/portfolio";
+@import "./blocks/main/blog";
