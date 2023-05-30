@@ -1,0 +1,39 @@
+@media (max-width: 1440px) {
+    .about-welcome-map {
+    display: none;
+    }
+    .about-welcome-description-video {
+        margin-bottom: 124px;
+    }
+    .about-welcome-map {
+        margin-bottom: 124px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-about {
+        .about-working {
+            margin-bottom: 80px;
+        }
+    }
+    
+    .about-us {
+        margin-bottom: 84px;
+        &-title {
+            margin-bottom: 24px;
+        }
+    }
+    .container-map {
+        margin-bottom: 80px;
+        &-ul {
+            padding: 10px;
+        }
+    }
+    .about-welcome-description-video {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 744px) {
+    
+}

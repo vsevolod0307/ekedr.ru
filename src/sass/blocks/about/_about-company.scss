@@ -1,0 +1,87 @@
+.container-about {
+    max-width: 636px;
+    margin: 24px auto 0 auto;
+    .about-working {
+        margin-bottom: 109px;
+        &-title {
+            background: url('/ekedr.ru/src/images/about/background-title.png') no-repeat 96% 100%;
+            margin-bottom: 40px;
+            & h1 {
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 120%;
+                color: $mainBlack;
+            }
+        }
+    }
+}
+
+.about-specialization {
+    &-title {
+        margin-bottom: 24px;
+        & p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: $mainBlack;
+        }
+    }
+    &-features {
+        &-two {
+            margin-bottom: 8px;
+        }
+        &-each {
+            display: inline-block;
+            background-color: $green;
+            padding: 8px 16px;
+            margin-right: 5px;
+            border-radius: 36px;
+            color: $white;
+        }
+    }
+}
+
+.about-us {
+    margin-bottom: 124px;
+    &-title {
+        margin-bottom: 40px;
+        & h2 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 120%;
+            color: $portfolioBlack;
+        }
+    }
+    &-short {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 8px;
+        row-gap: 8px;
+        &-each {
+            display: flex;
+            flex-direction: column;
+            background-color: $green;
+            min-height: 114px;
+            color: $white;
+            border-radius: 12px;
+            padding: 16px 24px;
+            max-width: 224px;
+            & h3 {
+                display: inline-block !important;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: 120%;
+                margin-bottom: 4px;
+            }
+            & span {
+                max-width: 176px;
+                display: inline-block;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+    
+}
+

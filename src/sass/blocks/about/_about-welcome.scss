@@ -1,0 +1,33 @@
+.container-welcome {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-welcome {
+    &-title {
+        & h2 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 120%;
+            color: $portfolioBlack;
+        }
+        margin-bottom: 40px;
+    }
+    &-description {
+        &-text {
+            margin-bottom: 24px;
+            & p {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 150%;
+                color: $mainBlack;
+            }
+        }
+    }
+}
+.about-welcome-map {
+    margin-top: 152px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 300px;
+}

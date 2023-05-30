@@ -15,7 +15,7 @@ a {
 }
 .container {
     max-width: 1440px;
-    padding: 0 60px;
+    padding: 0 60px;   
     margin: 0 auto;
 }
 
@@ -35,4 +35,10 @@ a {
 
 // портфолио
 @import "./blocks/portfolio/galery";
-@import "./media/portfolio-media"
+@import "./media/portfolio-media";
+
+// о компании
+@import "./blocks/about/about-company";
+@import "./blocks/about/about-delivery";
+@import "./blocks/about/about-welcome";
+@import "./media/about-media";
