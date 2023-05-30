@@ -10,6 +10,31 @@ html {
 a {
     text-decoration: none;
 }
+.itc-slider-indicator {
+    border-radius: 50%;
+    width: 8px !important;
+    height: 8px !important;
+    background-color: #ffffff !important;
+}
+.itc-slider-indicator-active {
+    background-color: #179B3D !important;
+}
+.itc-slider-btn {
+    border: 1px solid #D9D9D9 !important;
+    border-radius: 40px;
+    background-color: #ffffff !important;
+    height: 40px !important;
+}
+.itc-slider-btn-next {
+    right: -20px !important;
+}
+.itc-slider-btn-prev {
+    left: -20px !important;
+}
+.itc-slider-btn-next::before {
+    background-image: url(../images/main/arrow-next.svg) !important;
+    background-size: auto !important;
+}
 .mr-2 {
     margin-right: 8px;
 }
@@ -27,8 +52,7 @@ a {
 @import "./blocks/productDetail/similar";
 @import "./media/product-detail";
 // главная
-@import "./blocks/main/top-slider";
-@import "./blocks/main/catalog";
+@import "./blocks/main/main";
 @import "./blocks/main/portfolio";
 @import "./blocks/main/blog";
 
