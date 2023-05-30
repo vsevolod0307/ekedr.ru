@@ -1,0 +1,31 @@
+.portfolio {
+    margin-top: 20px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    &-title {
+        margin-bottom: 24px;
+        & h2 {
+            font-size: 40px;
+            color: $portfolioBlack;
+            
+            font-weight: 700;
+            line-height: 120%;
+            
+        } 
+    }
+    &-cards {
+        margin-bottom: 120px;
+        &-title {
+            margin-bottom: 24px;
+            & h3 {
+                font-weight: 600;
+                font-size: 28px;
+                color: $portfolioBlack;
+            }
+        }  
+        &-images {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
