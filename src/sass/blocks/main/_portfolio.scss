@@ -1,5 +1,17 @@
 .main_portfolio {
   margin-top: 88px;
+  .itc-slider {
+    display: block;
+    .itc-slider-items {
+      gap: $gapSlide;
+    }
+    .itc-slider-item {
+      flex: 0 0 calc(50% - $gapSlide / 2);
+    }
+  }
+  &-slider {
+    margin-top: 40px;
+  }
   &-title {
     display: flex;
     justify-content: space-between;
@@ -27,11 +39,6 @@
       }
     }
   }
-  &-box {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-  }
   &-promo {
     min-height: 546px;
     display: flex;
@@ -50,6 +57,10 @@
       bottom: -74px;
       left: -26px;
     }
+  }
+  &-right {
+    display: flex;
+    align-items: center;
   }
   &-desc {
     display: flex;
@@ -92,5 +103,8 @@
   }
   &-list {
     list-style-type: none;
+  }
+  .mobile-br {
+    display: none;
   }
 }
