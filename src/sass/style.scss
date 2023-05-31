@@ -45,6 +45,8 @@ a {
 }
 
 @import "./variables/variables";
+@import "./variables/mixins";
+
 @import "./blocks/header";
 @import "./blocks/footer";
 // карточка товара
