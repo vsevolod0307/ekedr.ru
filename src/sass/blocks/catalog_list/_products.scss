@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  &-content {
+    margin-top: 36px;
+    width: 100%;
+  }
+  .filter {
+    min-width: 312px;
+  }
+  .options {
+    .main-grid {
+      &-item {
+        position: relative;
+        overflow: hidden;
+        min-height: 174px;
+        padding: 20px 0 0 16px;
+        img {
+          z-index: 2;
+        }
+      }
+      &-title {
+        font-size: 20px;
+      }
+      &-ellipse, &-round, &-rectangle, &-square {
+        border-radius: 100px;
+        background-color: $green;
+        height: 68px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 80%;
+        &.second {
+          width: 45%;
+        }
+      }
+      &-round {
+        width: 68px;
+        right: 160px;
+      }
+      &-square {
+        right: 230px;
+        width: 68px;
+        border-radius: 0;
+      }
+      &-rectangle {
+        border-radius: 0;
+        width: 65%;
+      }
+    }
+    &-items {
+      display: flex;
+      gap: 24px;
+      margin-top: 34px;
+    }
+    &-title {
+      font-weight: 700;
+      font-size: 40px;
+    }
+  }
+  .tags-inner {
+    margin-top: 80px;
+  }
+  .tags-item {
+    background-color: $mainBlack;
+    a {
+      margin-left: 0;
+      color: $white;
+    }
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    gap: 48px;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+  }
+}

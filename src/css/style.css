@@ -1203,6 +1203,81 @@ main .itc-slider {
   margin-top: 80px;
 }
 
+.wrapper {
+  display: flex;
+}
+.wrapper-content {
+  margin-top: 36px;
+  width: 100%;
+}
+.wrapper .filter {
+  min-width: 312px;
+}
+.wrapper .options .main-grid-item {
+  position: relative;
+  overflow: hidden;
+  min-height: 174px;
+  padding: 20px 0 0 16px;
+}
+.wrapper .options .main-grid-item img {
+  z-index: 2;
+}
+.wrapper .options .main-grid-title {
+  font-size: 20px;
+}
+.wrapper .options .main-grid-ellipse, .wrapper .options .main-grid-round, .wrapper .options .main-grid-rectangle, .wrapper .options .main-grid-square {
+  border-radius: 100px;
+  background-color: #179B3D;
+  height: 68px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+}
+.wrapper .options .main-grid-ellipse.second, .wrapper .options .main-grid-round.second, .wrapper .options .main-grid-rectangle.second, .wrapper .options .main-grid-square.second {
+  width: 45%;
+}
+.wrapper .options .main-grid-round {
+  width: 68px;
+  right: 160px;
+}
+.wrapper .options .main-grid-square {
+  right: 230px;
+  width: 68px;
+  border-radius: 0;
+}
+.wrapper .options .main-grid-rectangle {
+  border-radius: 0;
+  width: 65%;
+}
+.wrapper .options-items {
+  display: flex;
+  gap: 24px;
+  margin-top: 34px;
+}
+.wrapper .options-title {
+  font-weight: 700;
+  font-size: 40px;
+}
+.wrapper .tags-inner {
+  margin-top: 80px;
+}
+.wrapper .tags-item {
+  background-color: #414340;
+}
+.wrapper .tags-item a {
+  margin-left: 0;
+  color: #ffffff;
+}
+.wrapper .products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  gap: 48px;
+  justify-content: center;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+
 .portfolio {
   margin-top: 20px;
   font-family: "Noto Sans";
