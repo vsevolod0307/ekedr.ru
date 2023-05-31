@@ -10,7 +10,7 @@
     gap: $gapSlide;
   }
   &-bg {
-    background: url(../../../images/main/blog_item.svg) center center / cover no-repeat;
+    @include imageCover("../../../images/main/blog_item.svg");
     min-height: 282px;
     border-radius: 12px;
   }

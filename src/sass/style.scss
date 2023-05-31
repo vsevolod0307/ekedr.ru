@@ -45,6 +45,8 @@ a {
 }
 
 @import "./variables/variables";
+@import "./variables/mixins";
+
 @import "./blocks/header";
 @import "./blocks/footer";
 // карточка товара
@@ -56,7 +58,8 @@ a {
 @import "./blocks/main/portfolio";
 @import "./blocks/main/blog";
 @import "./media/main";
-
+// каталог
+@import "./blocks/catalog/catalog";
 // портфолио
 @import "./blocks/portfolio/galery";
 @import "./media/portfolio-media"
