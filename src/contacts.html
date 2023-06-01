@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/itc-slider.css">
     <title>ekedr.ru</title>
 </head>
 <body>
@@ -117,11 +118,16 @@
                 <div class="contacts__links">
                     <a class="contacts__link" href="tel:+73832359435">+7 (383) 235-94-35</a>
                     <a class="contacts__link" href="tel:+78043337463">+7 (804) 333-74-63</a>
-                    <a class="contacts__link" href="mailto:info@kedr.ru">info@kedr.ru</a>
+                    <a class="contacts__link plast" href="mailto:info@kedr.ru">info@kedr.ru</a>
                 </div>
                 <div class="contacts__info info">
                     <div class="info__map">
-                        <img src="images/contacts/map.png" alt="расположение компании на карте">
+                        <picture>
+                            <source srcset="images/contacts/map-mob.png" media="(max-width: 576px)">
+                            <source srcset="images/contacts/map-992.png" media="(max-width: 992px)">
+                            <source srcset="images/contacts/map-1200.png" media="(max-width: 1200px)">
+                            <img src="images/contacts/map.png" alt="расположение компании на карте">
+                        </picture>
                     </div>
                     <div class="info__rec">
                         <h3 class="info__subtitle">Реквизиты компании</h3>
@@ -170,82 +176,157 @@
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">Оптовая компания «ЛЕСМАРКЕТ»</a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">Казахстан, г. Алматы, пр. Рыскулова 103 В.</a>
-                            <a class="partner__tel" href="tel:+77272704058">+7 (727) 270 40 58</a>
-                            <a class="partner__tel" href="tel:+77781207837">+7 (778) 120 78 37</a>
-                            <a class="partner__tel" href="tel:+77272704058">+7 (778) 120 78 37</a>
-                            <a class="partner__tel" href="tel:+77781207837">+7 (778) 120 783</a>
+                            <a class="partner__loc pli" href="#">Казахстан, г. Алматы, пр. Рыскулова 103 В.</a>
+                            <a class="partner__tel pli ptel" href="tel:+77272704058">+7 (727) 270 40 58</a>
+                            <a class="partner__tel pli" href="tel:+77781207837">+7 (778) 120 78 37</a>
+                            <a class="partner__tel pli" href="tel:+77272704058">+7 (778) 120 78 37</a>
+                            <a class="partner__tel pli ptime" href="tel:+77781207837">+7 (778) 120 783</a>
                         </div>
                         <a href="https://lesmarket.kz/">lesmarket.kz</a>
                     </div>
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">ООО "Наш Кедр"</a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">Москва, Варшавское шоссе, д.125, корп.3, офис 201П</a>
-                            <a class="partner__tel" href="tel:+74993220781">+7 (499) 322-07-81</a>
-                            <a class="partner__tel" href="tel:+74997042510"> +7 (499) 704-25-10</a>
-                            <a class="partner__tel" href="tel:+78003339439">+7 (800) 333-94-39 По России</a>
-                            <a class="partner__tel" href="mailto:info@nashkedr.ru">info@nashkedr.ru</a>
+                            <a class="partner__loc pli" href="#">Москва, Варшавское шоссе, д.125, корп.3, офис 201П</a>
+                            <a class="partner__tel pli ptel" href="tel:+74993220781">+7 (499) 322-07-81</a>
+                            <a class="partner__tel pli" href="tel:+74997042510"> +7 (499) 704-25-10</a>
+                            <a class="partner__tel pli" href="tel:+78003339439">+7 (800) 333-94-39 По России</a>
+                            <a class="partner__tel pli pmail" href="mailto:info@nashkedr.ru">info@nashkedr.ru</a>
                         </div>
                         <a href="https://nashkedr.ru/">nashkedr.ru</a>
                     </div>
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">Магазин ООО «Дачный Советник» </a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">г. Тюмень, ул. Авторемонтная, д. 18. офис 201.</a>
-                            <a class="partner__tel" href="tel:+73452683068">+7 (3452) 68-30-68</a>
-                            <a class="partner__tel" href="tel:+79044922210"> +7 (904) 492-22-10</a>
-                            <a class="partner__tel" href="#">Пн-Пт: 9-18, Сб: 9-16</a>
-                            <a class="partner__tel" href="mailto:dsopt@agsk.ru">dsopt@agsk.ru</a>
+                            <a class="partner__loc pli" href="#">г. Тюмень, ул. Авторемонтная, д. 18. офис 201.</a>
+                            <a class="partner__tel pli ptel" href="tel:+73452683068">+7 (3452) 68-30-68</a>
+                            <a class="partner__tel pli" href="tel:+79044922210"> +7 (904) 492-22-10</a>
+                            <a class="partner__tel pli ptime" href="#">Пн-Пт: 9-18, Сб: 9-16</a>
+                            <a class="partner__tel pli pmail" href="mailto:dsopt@agsk.ru">dsopt@agsk.ru</a>
                         </div>
                     </div>
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">Магазин «Банный Перец» </a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">г. Тюмень, д. Ожогина ул. Садовая д. 29. ТЦ «Банный Перец»</a>
-                            <a class="partner__tel" href="tel:+73452685873">+7 (3452) 68-58-73</a>
-                            <a class="partner__tel" href="mailto:ds_gp@mail.ru"> ds_gp@mail.ru</a>
-                            <a class="partner__tel" href="#">Пн- Вс: 9-19</a>
+                            <a class="partner__loc pli" href="#">г. Тюмень, д. Ожогина ул. Садовая д. 29. ТЦ «Банный Перец»</a>
+                            <a class="partner__tel pli ptel" href="tel:+73452685873">+7 (3452) 68-58-73</a>
+                            <a class="partner__tel pli pmail" href="mailto:ds_gp@mail.ru"> ds_gp@mail.ru</a>
+                            <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
                         </div>
                     </div>
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">Магазин «Дачный Советник»</a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">г. Тюмень, ул. Закалужская, ЦЗД «Усадьба» д. 83/4.</a>
-                            <a class="partner__tel" href="tel:+73452301001">+7 (3452) 301-001</a>
-                            <a class="partner__tel" href="mailto:ds_zak@mail.ru">ds_zak@mail.ru</a>
-                            <a class="partner__tel" href="#">Пн- Вс: 9-19</a>
+                            <a class="partner__loc pli" href="#">г. Тюмень, ул. Закалужская, ЦЗД «Усадьба» д. 83/4.</a>
+                            <a class="partner__tel pli ptel" href="tel:+73452301001">+7 (3452) 301-001</a>
+                            <a class="partner__tel pli pmail" href="mailto:ds_zak@mail.ru">ds_zak@mail.ru</a>
+                            <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
                         </div>
                     </div>
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">Магазин «Печной Эксперт»</a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">г. Тюмень ул. 50 лет Октября 180 строение 2, ТЦ «Печной Эксперт»</a>
-                            <a class="partner__tel" href="tel:+73452674737">+7 (3452) 67-47-37</a>
-                            <a class="partner__tel" href="mailto:ds_zak@mail.ru">ds-pe@mail.ru</a>
-                            <a class="partner__tel" href="#">Пн- Вс: 9-19</a>
+                            <a class="partner__loc pli" href="#">г. Тюмень ул. 50 лет Октября 180 строение 2, ТЦ «Печной Эксперт»</a>
+                            <a class="partner__tel pli ptel" href="tel:+73452674737">+7 (3452) 67-47-37</a>
+                            <a class="partner__tel pli pmail" href="mailto:ds_zak@mail.ru">ds-pe@mail.ru</a>
+                            <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
                         </div>
                     </div>
                     <div class="partner__item">
                         <a href="#" class="partner__link contacts__link">Магазин «Печи за Копейки»</a>
                         <div class="partner__cont">
-                            <a class="partner__loc" href="#">г. Тюмень, ул. Эрвье 22, рынок «Всё для дома» пав 13.</a>
-                            <a class="partner__tel" href="tel:+73452684595">+7 (3452) 68-45-95</a>
-                            <a class="partner__tel" href="mailto:ds_zak@mail.ru">ds-pe@mail.ru</a>
-                            <a class="partner__tel" href="#">Пн- Вс: 9-19</a>
+                            <a class="partner__loc pli" href="#">г. Тюмень, ул. Эрвье 22, рынок «Всё для дома» пав 13.</a>
+                            <a class="partner__tel pli ptel" href="tel:+73452684595">+7 (3452) 68-45-95</a>
+                            <a class="partner__tel pli pmail" href="mailto:ds_zak@mail.ru">ds-pe@mail.ru</a>
+                            <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">Оптовая компания «ЛЕСМАРКЕТ»</a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">Казахстан, г. Алматы, пр. Рыскулова 103 В.</a>
+                                <a class="partner__tel pli ptel" href="tel:+77272704058">+7 (727) 270 40 58</a>
+                                <a class="partner__tel pli" href="tel:+77781207837">+7 (778) 120 78 37</a>
+                                <a class="partner__tel pli" href="tel:+77272704058">+7 (778) 120 78 37</a>
+                                <a class="partner__tel pli ptime" href="tel:+77781207837">+7 (778) 120 783</a>
+                            </div>
+                            <a href="https://lesmarket.kz/">lesmarket.kz</a>
+                        </div>
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">ООО "Наш Кедр"</a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">Москва, Варшавское шоссе, д.125, корп.3, офис 201П</a>
+                                <a class="partner__tel pli ptel" href="tel:+74993220781">+7 (499) 322-07-81</a>
+                                <a class="partner__tel pli" href="tel:+74997042510"> +7 (499) 704-25-10</a>
+                                <a class="partner__tel pli" href="tel:+78003339439">+7 (800) 333-94-39 По России</a>
+                                <a class="partner__tel pli pmail" href="mailto:info@nashkedr.ru">info@nashkedr.ru</a>
+                            </div>
+                            <a href="https://nashkedr.ru/">nashkedr.ru</a>
+                        </div>
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">Магазин ООО «Дачный Советник» </a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">г. Тюмень, ул. Авторемонтная, д. 18. офис 201.</a>
+                                <a class="partner__tel pli ptel" href="tel:+73452683068">+7 (3452) 68-30-68</a>
+                                <a class="partner__tel pli" href="tel:+79044922210"> +7 (904) 492-22-10</a>
+                                <a class="partner__tel pli ptime" href="#">Пн-Пт: 9-18, Сб: 9-16</a>
+                                <a class="partner__tel pli pmail" href="mailto:dsopt@agsk.ru">dsopt@agsk.ru</a>
+                            </div>
+                        </div>
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">Магазин «Банный Перец» </a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">г. Тюмень, д. Ожогина ул. Садовая д. 29. ТЦ «Банный Перец»</a>
+                                <a class="partner__tel pli ptel" href="tel:+73452685873">+7 (3452) 68-58-73</a>
+                                <a class="partner__tel pli pmail" href="mailto:ds_gp@mail.ru"> ds_gp@mail.ru</a>
+                                <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
+                            </div>
+                        </div>
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">Магазин «Дачный Советник»</a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">г. Тюмень, ул. Закалужская, ЦЗД «Усадьба» д. 83/4.</a>
+                                <a class="partner__tel pli ptel" href="tel:+73452301001">+7 (3452) 301-001</a>
+                                <a class="partner__tel pli pmail" href="mailto:ds_zak@mail.ru">ds_zak@mail.ru</a>
+                                <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
+                            </div>
+                        </div>
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">Магазин «Печной Эксперт»</a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">г. Тюмень ул. 50 лет Октября 180 строение 2, ТЦ «Печной Эксперт»</a>
+                                <a class="partner__tel pli ptel" href="tel:+73452674737">+7 (3452) 67-47-37</a>
+                                <a class="partner__tel pli pmail" href="mailto:ds_zak@mail.ru">ds-pe@mail.ru</a>
+                                <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
+                            </div>
+                        </div>
+                        <div class="partner__item swiper-slide">
+                            <a href="#" class="partner__link contacts__link">Магазин «Печи за Копейки»</a>
+                            <div class="partner__cont">
+                                <a class="partner__loc pli" href="#">г. Тюмень, ул. Эрвье 22, рынок «Всё для дома» пав 13.</a>
+                                <a class="partner__tel pli ptel" href="tel:+73452684595">+7 (3452) 68-45-95</a>
+                                <a class="partner__tel pli pmail" href="mailto:ds_zak@mail.ru">ds-pe@mail.ru</a>
+                                <a class="partner__tel pli ptime" href="#">Пн- Вс: 9-19</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                </div>
                <div class="contacts__punkt punkt">
-                <h3 class="partner__subtitle">Наши представители</h3>
+                <h3 class="partner__subtitle">Пункты выдачи</h3>
                 <form action="#" class="punkt__form">
-                    <select name="" id="">
+                    <select name="select" id="select" class="select">
                         <option value="Москва">Москва</option>
                     </select>
                     <a class="punkt__link" href="#">Спартаковская площадь, 1А, Москва</a>
                 </form>
-                <img src="images/contacts/map2.png" alt="">
+                <picture>
+                    <source srcset="images/contacts/map2-mob.png" media="(max-width: 576px)">
+                    <img src="images/contacts/map2.png" alt="местоположение на карте">
+                </picture>
                </div> 
             </div>
         </div>
@@ -323,8 +404,9 @@
             </div>
         </div>
     </footer>
-    <script src="js/itc-slider.js"></script>
-    <script src="js/script.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="js/contacts.js"></script>
+    <!-- <script src="js/script-blog.js"></script> -->
 </body>
 </html>
