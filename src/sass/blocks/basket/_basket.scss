@@ -1,0 +1,128 @@
+.basket-main {
+
+    margin-top: 20px;
+    &-title {
+        & h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: $mainBlack;
+        }
+        & span {
+            color: $colorMediumGrey;
+        }
+    }
+    &-all {
+        margin-top: 40px;
+        margin-bottom: 100px;
+    }
+    &-each {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+        &-left {
+            display: flex;
+        }
+        &-img {
+            margin-right: 24px;
+        }
+        &-description {
+            display: flex;
+            margin: auto 0;
+            & h3 {
+                width: 546px;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: $mainBlack;
+            }
+        }
+        &-price-all {
+            display: flex;
+            column-gap: 40px;
+        }
+        &-price {
+            margin: auto 0;
+            & p {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 22px;
+                color: $colorMediumGrey;
+            }
+            & h5 {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+
+                color: $mainBlack;
+            }
+        }
+        &-amount {
+            background: $white;
+            border: 1px solid #DFE1E6;
+            border-radius: 4px;
+            width: 114px;
+            height: 52px;
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 16px;
+            margin: auto 0;
+            & img {
+                width: 10px;
+                height: 7px;
+                margin: auto 0;
+            }
+        }
+        &-delete {
+            margin: auto 0;
+        }
+    }
+    &-result {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 60px;
+        background-color: $white;
+        padding: 24px 0;
+        display: flex;
+        justify-content: end;
+        column-gap: 16px;
+        &-text {
+            margin-top: auto;
+            & span {
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 120%;
+                color: $colorMediumGrey;
+            }
+        }
+        &-price {
+            & p {
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 120%;
+                color: $mainBlack;
+            }
+        }
+        &-button {
+            margin-left: 24px;
+            & button {
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 16px;
+                width: 250px;
+                height: 48px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                background: $green;
+                border-radius: 4px;
+                color: $white;
+            } 
+            & img {
+                margin: auto 0;
+            }
+        }
+    }
+}

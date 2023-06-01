@@ -63,9 +63,13 @@ a {
 // список товаров
 @import "./blocks/catalog_list/aside";
 @import "./blocks/catalog_list/products";
+@import "./media/catalog_list";
 // портфолио
 @import "./blocks/portfolio/galery";
 @import "./media/portfolio-media";
+//Корзина 
+@import "./blocks/basket/basket";
+@import "./media/basket-media";
 // blog
 @import "./blocks/blog/blog";
 @import "./media/blog-media";
