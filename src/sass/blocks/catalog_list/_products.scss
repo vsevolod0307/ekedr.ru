@@ -15,6 +15,10 @@
     &-selects {
       display: flex;
       flex-direction: column;
+      select {
+        border: none;
+        margin-top: 32px;
+      }
     }
     &-count {
       &-title, &-title span {
@@ -150,7 +154,7 @@
   }
   .products {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 284spx));
     gap: 48px;
     justify-content: center;
     margin-top: 40px;

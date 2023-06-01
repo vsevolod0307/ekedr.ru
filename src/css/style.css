@@ -1223,6 +1223,10 @@ main .itc-slider {
   display: flex;
   flex-direction: column;
 }
+.wrapper .filter-selects select {
+  border: none;
+  margin-top: 32px;
+}
 .wrapper .filter-count-title, .wrapper .filter-count-title span {
   font-weight: 500;
   font-size: 14px;
@@ -1352,7 +1356,7 @@ main .itc-slider {
 }
 .wrapper .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 284spx));
   gap: 48px;
   justify-content: center;
   margin-top: 40px;
