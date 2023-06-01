@@ -74,5 +74,25 @@
     justify-content: center;
     margin-top: 40px;
     padding-bottom: 40px;
+    .similar {
+      &-price {
+        margin-top: 8px;
+      }
+      &-text {
+        margin-top: 16px;
+      }
+      &-item::before {
+        border-radius: 12px;
+        box-shadow: 0px 4px 24px rgba(23, 50, 21, 0.1);
+      }
+    }
+    .main{
+      &-details {
+        margin-top: 8px;
+      }
+      &-add-basket {
+        margin-top: 16px;
+      }
+    }
   }
 }
