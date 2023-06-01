@@ -46,7 +46,7 @@ main .itc-slider {
     }
   }
   .itc-slider-item {
-    @include imageCover("../../../images/main/main-img.png");
+    @include imageCover("../images/main/main-img.png");
     min-height: 264px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -101,7 +101,7 @@ main .itc-slider {
         color: $mainBlack;
         &::before {
           content: "";
-          @include imageCover("../../../images/main/arrow-link.svg");
+          @include imageCover("../images/main/arrow-link.svg");
           width: 10px;
           display: inline-block;
           height: 10px;
