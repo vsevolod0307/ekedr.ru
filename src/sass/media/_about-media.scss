@@ -35,5 +35,72 @@
 }
 
 @media (max-width: 744px) {
-    
+
+    .about-us-short {
+        margin: 0 auto;
+        &-each {
+            width: 48%;
+        }
+        .first {
+            width: 48%;
+        }
+        .second {
+            width: 48%;
+        }
+        .third {
+            width: 48%;
+        }
+        .fourth {
+            width: 48%;
+        }
+        .fifth {
+            width: 48%;
+        }   
+        .sixth {
+            width: 48%;
+        }
+    } 
+}
+
+@media (max-width: 576px) {
+    .container-about {
+        padding: 0 16px;
+        .about-working {
+            &-title {
+                & h1 {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+
+    .about-us-short {
+        .first {
+            width: 54%;
+        }
+        .second {
+            width: 44%;
+        }
+        .third {
+            width: 57%;
+        }
+        .fourth {
+            width: 41%;
+        }
+        .fifth {
+            width: 100%;
+        }   
+        .sixth {
+            width: 100%;
+        }
+    } 
+
+
+    .container-welcome {
+        padding: 0 16px;
+    }
+    .about-welcome-description-video iframe {
+        height: 243px;
+    }
 }

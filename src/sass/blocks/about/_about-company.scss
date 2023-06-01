@@ -65,7 +65,7 @@
             color: $white;
             border-radius: 12px;
             padding: 16px 24px;
-            max-width: 224px;
+            // max-width: 224px;
             & h3 {
                 display: inline-block !important;
                 font-weight: 600;
@@ -80,6 +80,24 @@
                 font-size: 14px;
                 line-height: 20px;
             }
+        }
+        .first {
+            width: 163px;
+        }
+        .second {
+            width: 182px;
+        }
+        .third {
+            width: 219px;
+        }
+        .fourth {
+            width: 127px;
+        }
+        .fifth {
+            width: 224px;
+        }   
+        .sixth {
+            width: 217px;
         }
     }
     
