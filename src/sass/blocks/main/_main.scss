@@ -1,7 +1,7 @@
+main .itc-slider {
+  display: block;
+}
 .main {
-  .itc-slider {
-    display: block;
-  }
   &-slider {
     &-text {
       display: flex;
@@ -48,7 +48,7 @@
     }
   }
   .itc-slider-item {
-    background: url(../../../images/main/main-img.png) center center / cover no-repeat;
+    @include imageCover("../../../images/main/main-img.png");
     min-height: 264px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -103,7 +103,7 @@
         color: $mainBlack;
         &::before {
           content: "";
-          background: url(../../../images/main/arrow-link.svg) center center / cover no-repeat;
+          @include imageCover("../../../images/main/arrow-link.svg");
           width: 10px;
           display: inline-block;
           height: 10px;
