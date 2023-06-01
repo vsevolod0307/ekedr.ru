@@ -58,7 +58,7 @@
   }
   &-images {
     &-bg {
-      background: url(../images/img-item.svg) center center / cover no-repeat;
+      @include imageCover("../images/img-item.svg");
       min-height: 506px;
       max-width: 756px;
       width: 756px;
@@ -72,7 +72,7 @@
     }
     &-item {
       cursor: pointer;
-      background: url(../images/img-item.svg) center center / cover no-repeat;
+      @include imageCover("../images/img-item.svg");
       width: 64px;
       height: 64px;
       border-radius: 6px;
@@ -283,6 +283,6 @@
   }
 }
 
-.itc-slider {
+.product-detail.itc-slider {
   display: none;
 }

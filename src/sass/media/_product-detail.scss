@@ -126,7 +126,7 @@
   }
   .main .itc-slider-item {
     max-width: 305px;
-    background: url(../images/img-item-mobile.svg) center center / cover no-repeat;
+    @include imageCover("../images/img-item-mobile.svg");
     height: 400px;
     border-radius: 8px;
   }
