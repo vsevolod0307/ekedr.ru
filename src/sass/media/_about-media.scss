@@ -104,3 +104,54 @@
         height: 243px;
     }
 }
+@media (max-width: 425px) {
+    .about-us-short {
+        .first {
+            width: 52%;
+        }
+        .second {
+            width: 44%;
+        }
+        .third {
+            width: 57%;
+        }
+        .fourth {
+            width: 40%;
+        }
+        .fifth {
+            width: 100%;
+        }   
+        .sixth {
+            width: 100%;
+        }
+    } 
+}
+@media (max-width: 400px) {
+    .about-us-short-each {
+        padding: 16px 16px;
+    }
+}
+@media (max-width: 375px) {
+    .about-us-short { 
+
+    
+    .first {
+        width: 100%;
+    }
+    .second {
+        width: 100%;
+    }
+    .third {
+        width: 100%;
+    }
+    .fourth {
+        width: 100%;
+    }
+    .fifth {
+        width: 100%;
+    }   
+    .sixth {
+        width: 100%;
+    }
+}
+}

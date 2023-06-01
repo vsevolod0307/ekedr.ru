@@ -1093,3 +1093,48 @@ a {
     height: 243px;
   }
 }
+@media (max-width: 425px) {
+  .about-us-short .first {
+    width: 52%;
+  }
+  .about-us-short .second {
+    width: 44%;
+  }
+  .about-us-short .third {
+    width: 57%;
+  }
+  .about-us-short .fourth {
+    width: 40%;
+  }
+  .about-us-short .fifth {
+    width: 100%;
+  }
+  .about-us-short .sixth {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .about-us-short-each {
+    padding: 16px 16px;
+  }
+}
+@media (max-width: 375px) {
+  .about-us-short .first {
+    width: 100%;
+  }
+  .about-us-short .second {
+    width: 100%;
+  }
+  .about-us-short .third {
+    width: 100%;
+  }
+  .about-us-short .fourth {
+    width: 100%;
+  }
+  .about-us-short .fifth {
+    width: 100%;
+  }
+  .about-us-short .sixth {
+    width: 100%;
+  }
+}
