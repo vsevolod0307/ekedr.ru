@@ -35,4 +35,9 @@ a {
 
 // портфолио
 @import "./blocks/portfolio/galery";
-@import "./media/portfolio-media"
+@import "./media/portfolio-media";
+
+
+//Корзина 
+@import "./blocks/basket/basket";
+@import "./media/basket-media";

@@ -830,3 +830,217 @@ a {
     margin-bottom: 80px;
   }
 }
+.basket-main {
+  margin-top: 20px;
+}
+.basket-main-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #414340;
+}
+.basket-main-title span {
+  color: #B3B4B3;
+}
+.basket-main-all {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.basket-main-each {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+.basket-main-each-left {
+  display: flex;
+}
+.basket-main-each-img {
+  margin-right: 24px;
+}
+.basket-main-each-description {
+  display: flex;
+  margin: auto 0;
+}
+.basket-main-each-description h3 {
+  width: 546px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #414340;
+}
+.basket-main-each-price-all {
+  display: flex;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.basket-main-each-price {
+  margin: auto 0;
+}
+.basket-main-each-price p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #B3B4B3;
+}
+.basket-main-each-price h5 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #414340;
+}
+.basket-main-each-amount {
+  background: #ffffff;
+  border: 1px solid #DFE1E6;
+  border-radius: 4px;
+  width: 114px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 16px;
+  margin: auto 0;
+}
+.basket-main-each-amount img {
+  width: 10px;
+  height: 7px;
+  margin: auto 0;
+}
+.basket-main-each-delete {
+  margin: auto 0;
+}
+.basket-main-result {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 60px;
+  background-color: #ffffff;
+  padding: 24px 0;
+  display: flex;
+  justify-content: end;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+.basket-main-result-text {
+  margin-top: auto;
+}
+.basket-main-result-text span {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #B3B4B3;
+}
+.basket-main-result-price p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #414340;
+}
+.basket-main-result-button {
+  margin-left: 24px;
+}
+.basket-main-result-button button {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  width: 250px;
+  height: 48px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  background: #179B3D;
+  border-radius: 4px;
+  color: #ffffff;
+}
+.basket-main-result-button img {
+  margin: auto 0;
+}
+
+@media (max-width: 1200px) {
+  .basket-main-title h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .basket-main-each-description h3 {
+    width: 275px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+}
+@media (max-width: 992px) {
+  .basket-main-each-price-all {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin-left: 230px;
+    margin-top: -60px;
+  }
+  .basket-main-each-description h3 {
+    width: 100%;
+  }
+  .basket-main-each-description {
+    margin: 0;
+  }
+  .basket-main-each {
+    display: block;
+  }
+  .basket-main-each-amount {
+    margin-right: auto;
+  }
+  .basket-main-result-price {
+    margin-top: auto;
+  }
+  .basket-main-result-price p {
+    font-weight: 600;
+    font-size: 28px;
+  }
+}
+@media (max-width: 744px) {
+  .basket-container {
+    padding: 0 24px !important;
+  }
+  .basket-main-result {
+    right: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .basket-main {
+    margin-bottom: 150px;
+  }
+  .basket-main-each {
+    border-bottom: 1px solid #ECECEC;
+  }
+  .basket-main-each-price-all {
+    display: flex;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .basket-main-each-left {
+    display: block;
+    margin-bottom: 24px;
+  }
+  .basket-main-result {
+    flex-wrap: wrap;
+  }
+  .basket-main-result-button {
+    width: 100%;
+  }
+  .basket-main-result-button button {
+    width: 100%;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 16px;
+  }
+  .basket-main-result-button img {
+    margin-left: 18px;
+  }
+}
+@media (max-width: 350px) {
+  .basket-main-each-price-all {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+  }
+}
