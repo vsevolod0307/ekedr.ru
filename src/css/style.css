@@ -1250,7 +1250,7 @@ main .itc-slider {
   font-weight: 500;
   font-size: 13px;
 }
-.wrapper .filter-count .close {
+.wrapper .filter-count .close, .wrapper .filter-count .filter-mobile-close {
   font-size: 20px;
   cursor: pointer;
 }
@@ -1268,6 +1268,9 @@ main .itc-slider {
   border-right: none;
   border-left: none;
   border-bottom: none;
+}
+.wrapper .filter-mobile-header {
+  display: none;
 }
 .wrapper .filter-categories {
   margin-top: 32px;
@@ -1324,10 +1327,10 @@ main .itc-slider {
 }
 .wrapper .options .main-grid-round {
   width: 68px;
-  right: 160px;
+  right: 50%;
 }
 .wrapper .options .main-grid-square {
-  right: 230px;
+  right: 68%;
   width: 68px;
   border-radius: 0;
 }
@@ -1356,7 +1359,7 @@ main .itc-slider {
 }
 .wrapper .products {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 284spx));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 284px));
   gap: 48px;
   justify-content: center;
   margin-top: 40px;
@@ -1395,8 +1398,14 @@ main .itc-slider {
 .wrapper .products .similar-item:hover .products-hover-item {
   display: block;
 }
-.wrapper .products .similar-item:hover .similar-img, .wrapper .products .similar-item:hover .similar-text {
+.wrapper .products .similar-item:hover .itc-slider, .wrapper .products .similar-item:hover .similar-text {
   z-index: 6;
+}
+.wrapper .products .similar-item .itc-slider-indicator {
+  border: 1px solid #EBEBEB;
+}
+.wrapper .products .similar-item .itc-slider-indicators {
+  bottom: 8px;
 }
 .wrapper .products-hover-item {
   position: absolute;
@@ -1457,6 +1466,120 @@ main .itc-slider {
   position: relative;
 }
 
+@media (max-width: 992px) {
+  .wrapper {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .wrapper .options-items {
+    flex-wrap: wrap;
+  }
+  .wrapper .filter-mobile {
+    width: 50%;
+    background-color: #ffffff;
+    z-index: 10;
+    position: absolute;
+    left: -600px;
+    top: 0;
+  }
+  .wrapper .filter-mobile hr {
+    display: none;
+  }
+  .wrapper .filter-mobile-title {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .wrapper .filter-mobile-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 16;
+    width: 100%;
+    height: 99%;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .wrapper .filter-mobile-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    padding-right: 12px;
+    box-shadow: 0 4px 7px 0 #EBEBEB;
+  }
+  .wrapper .filter-mobile-reboot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .filter-mobile-close {
+    margin-left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .wrapper .filter-mobile-wrapper {
+    overflow-y: auto;
+    height: 92vh;
+    padding-bottom: 40px;
+  }
+  .wrapper .filter-button {
+    cursor: pointer;
+    display: inline-block;
+  }
+  .wrapper .filter-button span {
+    margin-right: 12px;
+  }
+  .wrapper .filter-count .filter-reboot, .wrapper .filter-count hr {
+    display: none;
+  }
+  .wrapper .filter-count-title {
+    display: none;
+  }
+  .wrapper .filter-reboot {
+    margin-top: 0;
+  }
+  .wrapper .filter-categories, .wrapper .filter-type, .wrapper .filter-mobile-header, .wrapper .filter-selects {
+    padding: 0 16px;
+  }
+  .wrapper .filter-type-item {
+    margin-top: 8px;
+    border-bottom: 1px solid #EBEBEB;
+    padding-bottom: 4px;
+  }
+  .wrapper .filter-footer {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .filter-save {
+    width: 92%;
+  }
+  .wrapper .filter-save .main-add-basket {
+    width: 100%;
+    border: none;
+    max-width: 100%;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 760px) {
+  .catalog_list .container {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 550px) {
+  .wrapper .filter-mobile {
+    width: 70%;
+  }
+  .wrapper .filter-mobile-title {
+    font-size: 16px;
+  }
+  .wrapper .filter-mobile-reboot .filter-reboot {
+    font-size: 12px;
+  }
+}
 .portfolio {
   margin-top: 20px;
   font-family: "Noto Sans";
