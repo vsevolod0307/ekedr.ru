@@ -830,3 +830,35 @@ a {
     margin-bottom: 80px;
   }
 }
+.payment-header-top {
+  height: 34px;
+  background-color: #414340;
+}
+
+.payment-header-bottom {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-header-result span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #676966;
+  margin-right: 13px;
+  margin: auto 13px;
+}
+.payment-header-result img {
+  margin: auto 0;
+}
+
+.payment {
+  margin-top: 40px;
+}
+.payment-title h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #414340;
+}
