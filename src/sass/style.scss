@@ -60,6 +60,9 @@ a {
 @import "./media/main";
 // каталог
 @import "./blocks/catalog/catalog";
+// список товаров
+@import "./blocks/catalog_list/aside";
+@import "./blocks/catalog_list/products";
 // портфолио
 @import "./blocks/portfolio/galery";
 @import "./media/portfolio-media";
