@@ -1513,7 +1513,7 @@ main .itc-slider {
 .contacts .info__map {
   width: 65%;
 }
-.contacts .info__map img {
+.contacts .info .map {
   width: 95%;
 }
 .contacts .info__rec {
@@ -1653,6 +1653,9 @@ main .itc-slider {
   background-position: left center;
   background-repeat: no-repeat;
 }
+.contacts .punkt .map {
+  width: 100%;
+}
 .contacts .punkt img {
   width: 100%;
 }
@@ -1661,8 +1664,8 @@ main .itc-slider {
   .contacts .info__map {
     width: 50%;
   }
-  .contacts .info__map img {
-    max-height: 600px;
+  .contacts .info .map {
+    height: 550px;
   }
   .contacts .info__rec {
     width: 48%;
@@ -1683,8 +1686,8 @@ main .itc-slider {
     width: 100%;
     margin-bottom: 24px;
   }
-  .contacts .info__map img {
-    max-height: 600px;
+  .contacts .info .map {
+    height: 310px;
   }
   .contacts .info__rec {
     width: 100%;
@@ -1706,6 +1709,9 @@ main .itc-slider {
   }
   .contacts__breadcrumbs {
     display: none;
+  }
+  .contacts .info .map {
+    height: 260px;
   }
   .contacts .partner {
     margin-bottom: 80px;
@@ -1733,5 +1739,8 @@ main .itc-slider {
   }
   .contacts .partner__item {
     width: 100%;
+  }
+  .contacts .punkt .map {
+    height: 240px;
   }
 }
