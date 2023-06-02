@@ -274,12 +274,21 @@ a {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   display: none;
+  z-index: 17;
 }
-.modal-call-phone {
+.modal-close {
+  position: absolute;
+  top: 0;
+  font-size: 28px;
+  right: 12px;
+}
+.modal .main-form {
   background: radial-gradient(116.09% 379.8% at 95.75% 100%, #FFC58F 0%, #FEFBE2 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  -o-border-image: none;
+     border-image: none;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 200px;
 }
 
 .breadcrumbs {
