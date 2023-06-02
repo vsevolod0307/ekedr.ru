@@ -58,7 +58,7 @@
   }
   &-images {
     &-bg {
-      @include imageCover("../images/img-item.svg");
+      @include imageCover("../images/img-item.svg", cover);
       min-height: 506px;
       max-width: 756px;
       width: 756px;
@@ -72,7 +72,7 @@
     }
     &-item {
       cursor: pointer;
-      @include imageCover("../images/img-item.svg");
+      @include imageCover("../images/img-item.svg", cover);
       width: 64px;
       height: 64px;
       border-radius: 6px;
@@ -163,6 +163,14 @@
     background-color: $green;
     svg path {
       fill: $white;
+    }
+    &:hover {
+      background-color: $hoverGreen;
+    }
+  }
+  &-fast-order {
+    &:hover {
+      background-color: $darkBlack;
     }
   }
   &-payment {
@@ -260,6 +268,9 @@
       background-color: $mainBlack;
       border-radius: 4px;
       margin-top: 24px;
+      &:hover {
+        background-color: $darkBlack;
+      }
     }
     &-wrap {
       display: flex;

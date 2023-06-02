@@ -23,7 +23,7 @@
   &-img {
     min-height: 192px;
     width: 290px;
-    @include imageCover("../images/similar.svg");
+    @include imageCover("../images/similar.svg", contain);
     border-radius: 8px;
     border: 1px solid $colorLightGrey;
   }

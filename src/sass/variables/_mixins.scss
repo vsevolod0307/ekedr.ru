@@ -1,5 +1,5 @@
-@mixin imageCover($url) {
-  background: url($url) center center / cover no-repeat;
+@mixin imageCover($url, $size) {
+  background: url($url) center center / $size no-repeat;
 }
 
 @mixin center {
