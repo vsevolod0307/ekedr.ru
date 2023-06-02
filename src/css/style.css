@@ -169,6 +169,7 @@ a {
 .header_call-phone img, .header_basket img, .header_menu-link img {
   display: block;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .footer {
@@ -263,6 +264,22 @@ a {
   color: #F6F6F5;
   font-weight: 400;
   font-size: 13px;
+}
+
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+}
+.modal-call-phone {
+  background: radial-gradient(116.09% 379.8% at 95.75% 100%, #FFC58F 0%, #FEFBE2 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .breadcrumbs {
@@ -432,6 +449,12 @@ a {
 .main-add-basket svg path {
   fill: #ffffff;
 }
+.main-add-basket:hover {
+  background-color: #117D30;
+}
+.main-fast-order:hover {
+  background-color: #272827;
+}
 .main-payment {
   display: flex;
   flex-direction: column;
@@ -527,6 +550,9 @@ a {
   border-radius: 4px;
   margin-top: 24px;
 }
+.main-form button:hover {
+  background-color: #272827;
+}
 .main-form-wrap {
   display: flex;
   flex-direction: column;
@@ -572,7 +598,7 @@ a {
 .similar-img {
   min-height: 192px;
   width: 290px;
-  background: url("../images/similar.svg") center center/cover no-repeat;
+  background: url("../images/similar.svg") center center/contain no-repeat;
   border-radius: 8px;
   border: 1px solid #EBEBEB;
 }
@@ -1838,7 +1864,6 @@ main .itc-slider {
   color: #8D8E8D;
   text-align: center;
 }
-
 .none {
   display: none;
 }
