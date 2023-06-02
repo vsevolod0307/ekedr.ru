@@ -1,13 +1,44 @@
+function modalState(close, open, selector, transition = false) {
+  open.addEventListener("click", () => {
+    if(transition) {
+      selector.style.right = "0";
+      selector.style.transition = "1s all"
+    } else {
+      selector.style.display = "none";
+    }
+  })
+
+  close.addEventListener("click", () => {
+    if(transition) {
+      selector.style.right = "-500px";
+      selector.style.transition = ".5s all"
+    } else {
+      selector.style.display = "none";
+    }
+  })
+}
+
 const hamburger = document.querySelector(".header-hamburger");
 const menu = document.querySelector(".header-mobile");
 const closeMenu = document.querySelector(".header-mobile-close");
 
-hamburger.addEventListener("click", () => {
-  menu.style.right = "0";
-  menu.style.transition = "1s all"
+modalState(closeMenu, hamburger, menu, true)
+
+const filter = document.querySelector("#filter");
+const filterContent = document.querySelector(".filter-mobile-box");
+const filterMobile = document.querySelector(".filter-mobile");
+const filterClose = document.querySelector(".filter-mobile-close");
+
+filter.addEventListener("click", () => {
+  filterContent.style.opacity = "1";
+  filterContent.style.visibility = "visible";
+  filterMobile.style.left = "0";
+  filterMobile.style.transition = "1s all"
 })
 
-closeMenu.addEventListener("click", () => {
-  menu.style.right = "-500px";
-  menu.style.transition = ".5s all"
+filterClose.addEventListener("click", () => {
+  filterMobile.style.left = "-600px";
+  filterMobile.style.transition = "0.5s all"
+  filterContent.style.opacity = "0";
+  filterContent.style.visibility = "hidden";
 })
