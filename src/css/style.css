@@ -276,19 +276,38 @@ a {
   display: none;
   z-index: 17;
 }
-.modal-close {
-  position: absolute;
-  top: 0;
-  font-size: 28px;
-  right: 12px;
-}
-.modal .main-form {
+.modal-wrapper .main-form {
   background: radial-gradient(116.09% 379.8% at 95.75% 100%, #FFC58F 0%, #FEFBE2 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
   -o-border-image: none;
      border-image: none;
   position: relative;
   margin: 0 auto;
   margin-top: 200px;
+  padding: 24px;
+  max-width: 350px;
+  min-height: 100%;
+}
+.modal-wrapper .main-form input, .modal-wrapper .main-form button {
+  max-width: 100%;
+}
+.modal-wrapper .main-form-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+.modal-wrapper .main-form-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+}
+.modal-wrapper .main-form-bottom span {
+  width: 100%;
+  margin-top: 16px;
+}
+.modal-close {
+  position: absolute;
+  top: 0;
+  font-size: 28px;
+  right: 12px;
+  cursor: pointer;
 }
 
 .breadcrumbs {
