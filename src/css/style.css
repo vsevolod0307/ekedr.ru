@@ -2640,6 +2640,7 @@ main .itc-slider {
   font-size: 40px;
   line-height: 120%;
   color: #414340;
+  padding-left: 8px;
 }
 .good-payment p {
   font-weight: 600;
