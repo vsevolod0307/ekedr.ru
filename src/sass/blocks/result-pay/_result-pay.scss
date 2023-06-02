@@ -1,0 +1,94 @@
+.good-payment {
+    background-color: white;
+    width: 100%;
+
+    padding-bottom: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &-title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        column-gap: 12px;
+        text-align: center;
+        margin: 131px auto 12px auto;
+        & img {
+            width: 42px;
+            height: 42px;
+        }
+        & h2 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 120%;
+            color: $mainBlack;
+        }
+    }
+    & p{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 120%;
+        color: $mainBlack;
+        text-align: center;
+    }
+    & button {
+        display: flex;
+
+        height: 48px;
+        padding: 12px 16px;
+        background: $green;
+        border-radius: 4px;
+        margin-top: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid $green;
+        & a {
+            color: $white;
+
+        }
+    }
+}
+
+.class-none {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .good-payment {
+        &-title {
+            column-gap: 0;
+            & h2 {
+                font-weight: 600;
+                font-size: 28px;
+            }
+        }
+        & p {
+            font-weight: 500;
+            font-size: 16px;
+        }
+        & button {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .good-payment {
+        &-title {
+            & h2 {
+                text-align: left;
+                margin-left: 24px;
+            }
+        }
+        & button {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+}
+
+
