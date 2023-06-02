@@ -998,3 +998,41 @@ a {
   color: #8D8E8D;
   text-align: center;
 }
+
+.none {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .payment-title h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 744px) {
+  .payment-container {
+    padding: 0 24px !important;
+  }
+}
+@media (max-width: 490px) {
+  .payment-how-title {
+    flex-wrap: wrap;
+  }
+  .payment-cities {
+    width: 100%;
+  }
+  .payment-forms input {
+    width: 100%;
+  }
+  .payment-btn button {
+    width: 100%;
+  }
+  .payment-policy {
+    width: 100%;
+  }
+  .none {
+    display: block;
+  }
+  .payment-header-logo .img-logo {
+    display: none;
+  }
+}
