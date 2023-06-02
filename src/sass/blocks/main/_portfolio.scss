@@ -29,7 +29,7 @@
       margin-right: 50px;
       &::before {
         content: "";
-        @include imageCover("../images/main/arrow-next.svg");
+        @include imageCover("../images/main/arrow-next.svg", cover);
         width: 10px;
         display: inline-block;
         height: 10px;
@@ -47,7 +47,7 @@
     margin-top: 120px;
   }
   &-left {
-    @include imageCover("../images/main/portfolio_2.svg");
+    @include imageCover("../images/main/portfolio_2.svg", cover);
     min-width: 648px;
     border-radius: 12px;
     position: relative;
