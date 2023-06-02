@@ -1,0 +1,100 @@
+@media (max-width: 1200px) {
+    .basket-main { 
+        &-title {
+            & h1 {
+                font-weight: 600;
+                font-size: 28px;
+                line-height: 120%;
+            }
+        }
+        &-each {
+            &-description {
+                & h3 {
+                    width: 275px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 150%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .basket-main-each-price-all {
+        display: flex;
+        column-gap: 40px;
+        margin-left: 230px;
+        margin-top: -60px;
+    }
+    
+    .basket-main-each-description h3 {
+        width: 100%;
+    }
+    .basket-main-each-description {
+        margin: 0;
+    }
+    .basket-main-each {
+        display: block;
+    }
+    .basket-main-each-amount {
+        margin-right: auto;
+    }
+    .basket-main-result-price {
+        margin-top: auto;
+        & p {
+            font-weight: 600;
+            font-size: 28px;
+           
+        }
+    }
+}
+@media (max-width: 744px) {
+    .basket-container {
+        padding: 0 24px !important;
+    }
+    .basket-main-result {
+        right: 24px;
+    }
+}
+@media (max-width: 576px) {
+    .basket-main {
+        margin-bottom: 150px;
+    }
+    .basket-main-each {
+        border-bottom: 1px solid #ECECEC;
+        &-price-all {
+            display: flex;
+            column-gap: 40px;
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+    
+    .basket-main-each-left {
+        display: block;
+        margin-bottom: 24px;
+    }
+    .basket-main-result {
+        flex-wrap: wrap;
+        &-button {
+            width: 100%;
+            & button {
+                width: 100%;
+                justify-content: center;
+                margin-right: 10px;
+                margin-top: 16px;
+            }
+            & img {
+                margin-left: 18px;
+            }
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .basket-main-each-price-all {
+        column-gap: 25px;
+    }
+}
+

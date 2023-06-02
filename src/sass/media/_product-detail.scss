@@ -124,20 +124,11 @@
   .itc-slider {
     display: block;
   }
-  .itc-slider-item {
+  .main .itc-slider-item {
     max-width: 305px;
-    background: url(../images/img-item-mobile.svg) center center / cover no-repeat;
+    @include imageCover("../images/img-item-mobile.svg");
     height: 400px;
     border-radius: 8px;
-  }
-  .itc-slider-indicator {
-    border-radius: 50%;
-    width: 8px !important;
-    height: 8px !important;
-    background-color: $white !important;
-  }
-  .itc-slider-indicator-active {
-    background-color: $green !important;
   }
 
   .tags {
