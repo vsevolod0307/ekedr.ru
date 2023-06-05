@@ -26,7 +26,7 @@
                             <a href="#">Портфолио</a>
                         </li>
                         <li class="header_link">
-                            <a href="#">Контакты</a>
+                            <a href="contacts.html">Контакты</a>
                         </li>
                     </ul>
                     <ul class="header_contacts">
@@ -59,7 +59,7 @@
                                     <a href="#">Портфолио</a>
                                 </li>
                                 <li class="header-mobile-link">
-                                    <a href="#contacts">Контакты</a>
+                                    <a href="contacts.html">Контакты</a>
                                 </li>
                             </ul>
                             <div class="header-mobile-close">&times;</div>
@@ -92,9 +92,7 @@
                     </ul>
                     <div class="header_actions">
                         <div class="header_call-phone">
-                            <a href="tel:+78043337463">
-                                <img src="images/header_phone.svg" alt="phone">
-                            </a>
+                            <img src="images/header_phone.svg" alt="phone">
                             <span class="mobile-none">Заказать звонок</span>
                         </div>
                         <div class="header_basket">
@@ -412,9 +410,26 @@
             </div>
         </div>
     </footer>
+    <div class="modal-wrapper">
+        <div class="modal-call-phone">
+            <div class="main-form" id="form">
+                <form class="main-form-wrap">
+                    <div class="main-form-title">Заказать звонок</div>
+                    <div class="main-form-subtitle">Заполните форму и наш специалист свяжется с вами в ближайшее время</div>
+                    <input class="main-form-tel" type="number" placeholder="Телефон *">
+                    <input type="text" placeholder="Как вас зовут? *">
+                    <button type="submit">Отправить</button>
+                </form>
+                <div class="main-form-bottom">
+                    <span>Нажимая на кнопку «Отправить», я даю свое согласие на обработку персональных данных</span>
+                </div>
+                <div class="modal-close">&times;</div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
     <script src="js/contacts.js"></script>
-    <!-- <script src="js/script-blog.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
 </html>

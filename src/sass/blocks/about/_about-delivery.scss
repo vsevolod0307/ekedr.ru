@@ -1,0 +1,38 @@
+.container-about {
+    margin-bottom: 44px;
+    & h2 {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+        color: $portfolioBlack;
+    }
+}
+
+.container-map {
+    max-width: 872px;
+    margin: 0 auto;
+    padding: 0 auto;
+    max-height: 428px;
+    margin-bottom: 120px;
+    background: url(../images/about/background-map.jpg) center center /contain no-repeat;
+    &-ul {
+        margin: 0 auto;
+        padding-top: 78px;
+        padding-bottom: 54px;
+        display: flex;
+        column-gap: 50px;
+        justify-content: center;
+        
+        &-column{
+            & li {
+                display: flex;
+                column-gap: 12px;
+                list-style-type: none;
+                margin-bottom: 12px;
+                & span {
+                    padding-top: 5px;
+                }
+            } 
+        }
+    }
+}
