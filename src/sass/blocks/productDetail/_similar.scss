@@ -1,7 +1,7 @@
 .similar {
   padding: 80px 0 140px 0;
   &-title {
-    color: #3E3E3E;
+    // color: $portfolioBlack;
     font-weight: 600;
     font-size: 28px;
   }
@@ -23,7 +23,7 @@
   &-img {
     min-height: 192px;
     width: 290px;
-    background: url(../images/similar.svg) center center / contain no-repeat;
+    @include imageCover("../images/similar.svg", contain);
     border-radius: 8px;
     border: 1px solid $colorLightGrey;
   }

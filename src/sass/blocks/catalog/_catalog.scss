@@ -1,0 +1,20 @@
+.catalog {
+  padding-bottom: 120px;
+  &-description {
+    margin: 0 auto;
+    margin-top: 120px;
+    max-width: 620px;
+  }
+  &-text {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 28px;
+  }
+  &-popular {
+    margin-top: 80px;
+  }
+}

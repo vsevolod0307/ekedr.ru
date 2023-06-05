@@ -58,7 +58,7 @@
   }
   &-images {
     &-bg {
-      background: url(../images/img-item.svg) center center / cover no-repeat;
+      @include imageCover("../images/img-item.svg", cover);
       min-height: 506px;
       max-width: 756px;
       width: 756px;
@@ -72,7 +72,7 @@
     }
     &-item {
       cursor: pointer;
-      background: url(../images/img-item.svg) center center / cover no-repeat;
+      @include imageCover("../images/img-item.svg", cover);
       width: 64px;
       height: 64px;
       border-radius: 6px;
@@ -87,9 +87,7 @@
     div {
       min-width: 48%;
       min-height: 60px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include center;
       box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05);
       border-radius: 12px;
       cursor: pointer;
@@ -158,15 +156,21 @@
     font-size: 16px;
     color: $white;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     cursor: pointer;
   }
   &-add-basket {
     background-color: $green;
     svg path {
       fill: $white;
+    }
+    &:hover {
+      background-color: $hoverGreen;
+    }
+  }
+  &-fast-order {
+    &:hover {
+      background-color: $darkBlack;
     }
   }
   &-payment {
@@ -264,6 +268,9 @@
       background-color: $mainBlack;
       border-radius: 4px;
       margin-top: 24px;
+      &:hover {
+        background-color: $darkBlack;
+      }
     }
     &-wrap {
       display: flex;
@@ -283,6 +290,6 @@
   }
 }
 
-.itc-slider {
+.product-detail.itc-slider {
   display: none;
 }

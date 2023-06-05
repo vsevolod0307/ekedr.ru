@@ -1,0 +1,9 @@
+@mixin imageCover($url, $size) {
+  background: url($url) center center / $size no-repeat;
+}
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
