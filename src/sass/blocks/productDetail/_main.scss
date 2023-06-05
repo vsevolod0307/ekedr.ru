@@ -56,6 +56,12 @@
     gap: 27px;
     
   }
+  .ls {
+    @include imageCover('../images/more5.png', cover);
+  }
+  .fr{
+    @include imageCover('../images/img-item.svg', cover);
+  }
   &-images {
     &-bg {
       @include imageCover("../images/img-item.svg", cover);
@@ -72,11 +78,13 @@
     }
     &-item {
       cursor: pointer;
-      @include imageCover("../images/img-item.svg", cover);
+      @include imageCover("../images/Photomini.svg", cover);
       width: 64px;
       height: 64px;
       border-radius: 6px;
     }
+
+    
   }
   &-infobox {
     width: 100%;
@@ -158,6 +166,7 @@
     border-radius: 4px;
     @include center;
     cursor: pointer;
+    border: none;
   }
   &-add-basket {
     background-color: $green;

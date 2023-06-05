@@ -63,6 +63,14 @@
 }
 
 @media (max-width: 576px) {
+    .about {
+        .breadcrumbs {
+            gap: 12px;
+            &-item {
+              font-size: 10px;
+            }
+          }
+    }
     .container-about {
         padding: 0 16px;
         .about-working {

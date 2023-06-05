@@ -15,9 +15,49 @@
     &-selects {
       display: flex;
       flex-direction: column;
+      margin-bottom: 40px;
       select {
         border: none;
         margin-top: 32px;
+      }
+    }
+    &-type {
+      &-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      &-check {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border: 1px solid #D9D9D9;
+        border-radius: 2px;
+        position: relative;
+        margin-right: 8px;
+        transition: background-color .3s ease-in-out, color .3s ease-in-out;
+      }
+      &-check::before {
+        content: url(../images/catalog_list/checkbox.svg);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        visibility: hidden;
+      }
+      &-checkbox {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+        &:checked + .filter-type-check::before {
+          visibility: visible;
+        }
       }
     }
     &-count {
@@ -149,7 +189,7 @@
     margin-top: 80px;
   }
   .tags-item {
-    background-color: $mainBlack;
+    background-color: #272827;
     a {
       margin-left: 0;
       color: $white;
@@ -229,7 +269,7 @@
         &.ellipsis {
           background-color: $white;
           border-bottom: 2px dotted;
-          margin: 2px 6px;
+          margin: 2px 0;
           width: 20px;
           pointer-events: none;
         }
@@ -263,6 +303,7 @@
         margin-top: 16px;
         z-index: 5;
         position: relative;
+        border: none;
       }
     }
   }

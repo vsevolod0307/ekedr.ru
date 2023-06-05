@@ -106,6 +106,14 @@
 }
 
 @media (max-width: 550px) {
+    .catalog_list {
+        .breadcrumbs {
+            gap: 12px;
+            &-item {
+              font-size: 10px;
+            }
+          }
+    }
     .wrapper {
         .filter {
             &-mobile {

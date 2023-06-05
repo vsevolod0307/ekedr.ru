@@ -74,9 +74,11 @@
         gap: 24px;
     }
     &_link a, &_contact a, &_menu-link a {
-        font-size: 14px;
         color: $colorLightGrey;
+        font-style: normal;
         font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
     }
     &_menu-link a {
         color: $colorDarkGrey;

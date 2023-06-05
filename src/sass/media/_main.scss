@@ -45,6 +45,9 @@
       }
       &-item {
         width: 45%;
+        .iqq {
+          width: 50%;
+        }
       }
     }
   }
@@ -81,6 +84,20 @@
     }
   }
 }
+@media (max-width: 700px) {
+  .main {
+    &-grid {
+      &-item {
+        .ing {
+          width: 85%;
+        }
+        .iqq {
+          width: 85%;
+        }
+      }
+    }
+  }
+}
 
 @media (max-width: 600px) {
   .main_portfolio {
@@ -89,6 +106,24 @@
       min-width: 400px;
       img {
         bottom: -43px;
+      }
+    }
+  }
+  .main {
+    .breadcrumbs {
+      gap: 12px;
+      &-item {
+        font-size: 10px;
+      }
+    }
+    &-grid {
+      &-item {
+        .ing {
+          width: 93%;
+        }
+        .iqq {
+          width: 93%;
+        }
       }
     }
   }
@@ -105,6 +140,22 @@
       img {
         height: 99vw;
         top: 0;
+      }
+    }
+  }
+  .main {
+    &-grid {
+      &-item {
+        height: 300px;
+        .ing {
+          width: 124%;
+        }
+        .iq {
+          width: 103%;
+        }
+        .iqq {
+          width: 118%;
+        }
       }
     }
   }
