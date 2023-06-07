@@ -1,12 +1,11 @@
 import gulp         from 'gulp';
 import browserSync  from 'browser-sync';
-
 import gulpSass from 'gulp-sass';
 import dartSass from 'sass';
 const sass = gulpSass(dartSass);
-
 import autoprefixer  from 'gulp-autoprefixer';
-// import imagemin from "gulp-imagemin";
+import imageminSvgo from 'imagemin-svgo';
+import imagemin, { mozjpeg, optipng } from 'gulp-imagemin';
 
 gulp.task('server', function() {
 
@@ -19,15 +18,16 @@ gulp.task('server', function() {
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 
-// gulp.task('imagemin', function() {
-//     return gulp.src(path.join(target, '**/.{svg}'))
-//         .pipe(imagemin([
-//             imagemin.svgo({ plugins: [{ removeViewBox: true }] })
-//         ], {
-//             verbose: true
-//         }))
-//         .pipe(gulp.dest('src/img'))
-// })
+gulp.task('imagemin', function() {
+    return gulp.src('src/images/**/*.{jpg,png,svg,gif,ico,webp,JPG,PNG,SVG,GIF,ICO,WEBP}')
+        .pipe(imagemin([
+            imageminSvgo({ plugins: [{ name: "removeViewBox", active: false }] }),
+            mozjpeg({quality: 75, progressive: true}),
+            optipng({optimizationLevel: 5})
+        ],
+        {verbose: true}))
+        .pipe(gulp.dest('src/images'))
+})
 
 gulp.task('styles', function() {
     return gulp.src("src/sass/**/*.+(scss|sass)")
