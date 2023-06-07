@@ -61,6 +61,7 @@
   }
   .fr{
     @include imageCover('../images/img-item.svg', cover);
+    border: 3px solid #179B3D;
   }
   &-images {
     &-bg {

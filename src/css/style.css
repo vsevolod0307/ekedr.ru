@@ -373,6 +373,7 @@ a {
 }
 .main .fr {
   background: url("../images/img-item.svg") center center/cover no-repeat;
+  border: 3px solid #179B3D;
 }
 .main-images-bg {
   background: url("../images/img-item.svg") center center/cover no-repeat;
