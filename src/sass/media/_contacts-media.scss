@@ -80,8 +80,8 @@
 }
 @media (max-width: 576px) {
     .contacts {
-        .plast {
-            margin-top: 16px;
+        &__link:not(:last-child) {
+                margin-right: 13px;
         }
         .info {
             margin-bottom: 48px;
@@ -104,6 +104,13 @@
             .map {
                 height: 240px;
             }
+        }
+    }
+}
+@media (max-width: 482px) {
+    .contacts {
+        .plast {
+            margin-top: 16px;
         }
     }
 }

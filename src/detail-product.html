@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/itc-slider.css">
+    <!-- <link rel="stylesheet" href="css/itc-slider.css"> -->
     <title>ekedr.ru</title>
 </head>
 <body>
@@ -144,14 +145,15 @@
                         <div class="main-images-item"></div>
                         <div class="main-images-item ls"></div>
                     </div>
-                    <div class="product-detail itc-slider" data-slider="itc-slider" data-autoplay="true" swipe="true">
-                        <div class="itc-slider-wrapper">
-                            <div class="itc-slider-items">
-                                <div class="itc-slider-item"></div>
-                                <div class="itc-slider-item"></div>
-                                <div class="itc-slider-item"></div>
-                                <div class="itc-slider-item"></div>
+                    <div class="product-detail itc-slider" >
+                        <div class="itc-slider-wrapper sliderr">
+                            <div class="itc-slider-items swiper-wrapper">
+                                <div class="itc-slider-item swiper-slide"></div>
+                                <div class="itc-slider-item swiper-slide"></div>
+                                <div class="itc-slider-item swiper-slide"></div>
+                                <div class="itc-slider-item swiper-slide"></div>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                         <ol class="itc-slider-indicators">
                             <li class="itc-slider-indicator" data-slide-to="0"></li>
@@ -424,7 +426,8 @@
             </div>
         </div>
     </div>
-    <script src="js/itc-slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- <script src="js/itc-slider.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -65,6 +65,12 @@
 @media (max-width: 576px) {
     .galery {
         .container {
+            .breadcrumbs {
+                gap: 12px;
+                &-item {
+                  font-size: 10px;
+                }
+              }
             padding: 0 16px;
             .portfolio {
                 &-cards { 

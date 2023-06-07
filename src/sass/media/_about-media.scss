@@ -35,7 +35,9 @@
 }
 
 @media (max-width: 744px) {
-
+    .container-about {
+        padding: 0 10px;
+    }
     .about-us-short {
         margin: 0 auto;
         &-each {

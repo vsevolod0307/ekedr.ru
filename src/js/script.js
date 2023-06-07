@@ -31,3 +31,22 @@ window.addEventListener("DOMContentLoaded", () => {
   
   modalState(modalClose, callPhone, modalWrapper)
 })
+
+const swiperr = new Swiper('.sliderr', {
+
+  loop: true,
+  grabCursor: true,
+  // autoHeight: true,
+  // centeredSlidesBounds: true,
+  pagination: {
+      el: '.swiper-pagination',
+    },
+  breakpoints: {
+  100: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+  },
+  
+  
+},});
+console.log('helo');

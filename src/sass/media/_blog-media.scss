@@ -13,3 +13,14 @@
         }
     }
 }
+
+@media (max-width: 430px) {
+    .blog {
+        .breadcrumbs {
+            gap: 12px;
+            &-item {
+              font-size: 10px;
+            }
+          }
+    }
+}
