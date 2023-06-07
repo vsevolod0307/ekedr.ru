@@ -1627,6 +1627,9 @@ main .itc-slider {
 .wrapper .products .similar-item .itc-slider-indicators {
   bottom: 8px;
 }
+.wrapper .products .similar-item > .main-add-basket {
+  display: none;
+}
 .wrapper .products-hover-item {
   position: absolute;
   display: none;
@@ -1784,6 +1787,15 @@ main .itc-slider {
     border: none;
     max-width: 100%;
     margin-top: 40px;
+  }
+  .products-hover-item {
+    display: none !important;
+  }
+  .products .similar-item::before {
+    display: none !important;
+  }
+  .products .similar-item > .main-add-basket {
+    display: flex !important;
   }
 }
 @media (max-width: 760px) {

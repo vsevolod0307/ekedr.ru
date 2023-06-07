@@ -96,6 +96,19 @@
             }
         }
     }
+    .products {
+        &-hover-item {
+            display: none !important;
+        }
+        .similar-item {
+            &::before {
+                display: none !important;
+            }
+            > .main-add-basket {
+                display: flex !important;
+            }
+        }
+    }
 }
 
 @media (max-width: 760px) {
